@@ -111,7 +111,6 @@ export function App() {
     paddingLeft :'15px',
     paddingRight : '15px',
     borderRadius:' 11px',
-    float: 'right',
     alignItems: 'right',
     backgroundColor: '#1f2639',
     color: 'white' ,
@@ -177,7 +176,7 @@ const contentCss = {
   return(
     <div  >
       <head>
-        <title>hiSwap Protocol App </title>
+        <title>Home | HiSwap Protocol App </title>
         
         
       </head>
