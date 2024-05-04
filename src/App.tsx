@@ -101,11 +101,10 @@ export function App() {
   }
 
 
-  const lastheaderItem = {
+  const lastheaderItem: React.CSSProperties = {
     position: 'absolute',
     top: '20px',       // Adjust this value as needed
     right: '45px', 
-   
     marginRight:'0px',
     padding: '10px',
     paddingLeft :'15px',
@@ -149,7 +148,7 @@ const ifrCss ={    border:' 2px solid #21273a' , borderRadius : '15px' ,  width:
 const ifrCss2 ={    border:' 2px solid #21273a' , borderRadius : '15px' ,  width: '370px' , height: '520px' , marginLeft : '15%'}
 
 
-const sidebarCss = {
+const sidebarCss: React.CSSProperties = {
   position: 'fixed',
   top: 0,
   left: 0,
@@ -209,7 +208,7 @@ const contentCss = {
 )}
 
       {windowWidth < 1100 && (
-            <div style={lastheaderItem } onClick={toggleSidebar} >
+            <div style={lastheaderItem} onClick={toggleSidebar} >
               ☰
             </div>
           )}
