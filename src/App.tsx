@@ -120,7 +120,7 @@ export function App() {
     
     
   }
-  const headerCss = {  height: '60px',
+  const headerCss = {  height: '55px',
   display: 'flex',
   alignItems : 'center',
   paddingLeft : '50px' , 
@@ -131,14 +131,16 @@ export function App() {
 
 const logoDiv ={  display: 'flex',
 alignItems: 'center',
-gap: '20px'
+gap: '10px'
 }
 
 const logoCss = {
-  width: '180px',
-  height: '42px',
+  width: '190px',
+  height: '45px',
+  paddingTop:'-5px',
   paddingRight: '20px',
-  paddingLeft:'-10px'
+  paddingLeft:'-20px',
+  marginLeft :'-20px',
 }
 
 
@@ -181,15 +183,15 @@ const contentCss = {
       </head>
 
       
-      <header
-       style={headerCss}
-  >
+      <header style={headerCss}>
+        
       <div style={logoDiv}>
        <a href='https://app.hiswap.org' ><img src={Logo} alt="logo" style={logoCss} />
        </a>
+       </div>
 
       
-      </div>
+      
 
 
       {windowWidth > 1101 && (
@@ -212,15 +214,16 @@ const contentCss = {
               ☰
             </div>
           )}
-
+    
 
 
       
     </header>
     
-    
+    <hr style={{borderColor: 'black', borderWidth: '0 0 0.01px 0', width: '100%' , boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)', marginTop:'-18px'  }} />
+
     { !showSidebar   ? (
-        <div>
+        <div style={{  paddingTop:'20px' }}>
         {showDiv1 && <LiFiWidget config={widgetConfig} integrator="vite-example" />}
         {showDiv2 && windowWidth < 1100 && <iframe  style={ifrCss2} allow="usb; ethereum; clipboard-write" loading="lazy"  title="Buy Crypto widget" src="https://global.transak.com/" ></iframe>}
 
