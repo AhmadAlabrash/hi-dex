@@ -220,7 +220,7 @@ const contentCss = {
       
     </header>
     
-    <hr style={{borderColor: 'rgba(13, 20, 33, 0.1)', borderWidth: '0 0 0.01px 0', width: '100%' , boxShadow: '0px 2px 4px rgba(13, 20, 33, 0.1)', marginTop:'-18px'  }} />
+    <hr style={{borderColor: 'rgba(13, 20, 33, 0.1)', borderWidth: '0 0 1px 0', width: '100%' , boxShadow: '0px 2px 4px rgba(13, 20, 33, 0.1)', marginTop:'-18px'  }} />
 
     { !showSidebar   ? (
         <div style={{  paddingTop:'20px' }}>
