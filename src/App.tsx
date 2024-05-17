@@ -61,7 +61,7 @@ export function App() {
     if(showNotification){
       messageApi.open({
         type: 'warning',
-        content: `Trading Perps Is Cooming Soon ...`,
+        content: `Trading Perps Is Coming Soon ...`,
         duration: 3,
       })
     }    
